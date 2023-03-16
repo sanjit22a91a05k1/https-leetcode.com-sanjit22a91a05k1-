@@ -1,0 +1,16 @@
+int divide(int dividend, int divisor){
+
+       /* if(dividend == pow(-2,31) && divisor == -1)
+         {
+         return pow(-2,31);
+         }
+        int div = dividend/divisor;
+        return div; ---> this code is also correct*/
+        
+        if(dividend==-2147483648 && divisor==-1)
+        {
+        return (pow(2,31));
+        }
+         int div = dividend/divisor;
+        return div;
+    }
