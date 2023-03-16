@@ -1,0 +1,22 @@
+bool judgeSquareSum(int c){
+   long l=0;
+   long h=sqrt(c);
+   while(l<=h)
+   {
+      long sum=l*l+h*h;
+       if(sum==c)
+       {
+           return true;
+       }
+       else if(sum>c)
+       {
+           h--;
+       }
+       else 
+       {
+           l++;
+       }
+   }
+   return false;
+   
+}
