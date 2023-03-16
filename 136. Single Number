@@ -1,0 +1,12 @@
+int singleNumber(int* nums, int numsSize){
+   for(int i=0; i<numsSize; i++)
+   {
+       int x=nums[0];
+       for(int j=1; j<numsSize; j++)
+       {
+           x=x^nums[j];
+       }
+      return x;
+   }
+   return 0;
+}
