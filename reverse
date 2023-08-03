@@ -1,0 +1,18 @@
+int reverse(int x){
+    int t=x;
+   long rev = 0;
+    while ( x!=0 ){
+        int r=x%10;
+      rev = rev *10 + r;
+      x = x / 10 ;
+    }
+    t = rev;
+    if(rev!= t)
+    {
+     return 0;
+    }
+    else 
+    {
+    return rev;
+    }
+}
