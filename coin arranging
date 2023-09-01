@@ -1,0 +1,26 @@
+int arrangeCoins(int n){
+   long  l=0;
+   long h=n-1;
+    if(n==1)
+    {
+        return 1;
+    }
+    while(l<=h)
+    {
+       long m=(l+h)/2;
+       long s=((m*(m+1))/2);
+        if(s==n)
+        {
+            return m;
+        }
+        else if(s>n)
+        {
+            h=m-1;
+        }
+        else 
+        {
+            l=m+1;
+        }
+    }
+    return h;
+   }
